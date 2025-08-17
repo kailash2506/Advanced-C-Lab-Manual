@@ -161,7 +161,7 @@ int main()
 
 Output:
 
-![alt text](7(3).png)
+![alt text](image/7(3).png)
 
 
 Result:
@@ -223,7 +223,7 @@ int main()
 
 Output:
 
-![alt text](7(4).png)
+![alt text](image/7(4).png)
 
 
 Result:
@@ -301,7 +301,7 @@ int main() {
 
 Output:
 
-![alt text](7(5).png)
+![alt text](image/7(5).png)
 
 
 Result:
