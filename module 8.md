@@ -45,7 +45,7 @@ int main() {
 
 Output:
 
-![alt text](8(1).png)
+![alt text](image/8(1).png)
 
 Result:
 Thus, the program is verified successfully
@@ -85,7 +85,7 @@ int main() {
 
 Output:
 
-![alt text](8(2).png)
+![alt text](image/8(2).png)
 
 Result:
 Thus, the program is verified successfully
@@ -174,7 +174,7 @@ int main()
 
 Output:
 
-![alt text](8(3).png)
+![alt text](image/8(3).png)
 
 
 Result:
@@ -231,7 +231,7 @@ int main()
 
 Output:
 
-![alt text](8(4).png)
+![alt text](image/8(4).png)
 
 Result:
 Thus, the program is verified successfully
@@ -276,7 +276,7 @@ int main()
 
 Output:
 
-![alt text](8(5).png)
+![alt text](image/8(5).png)
 
 Result:
 Thus, the program is verified successfully
