@@ -104,7 +104,7 @@ int main()
 
 Output:
 
-![alt text](7(2).png)
+![alt text](image/7(2).png)
 
 Result:
 Thus, the program is verified successfully
