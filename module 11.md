@@ -1,6 +1,6 @@
 
 
-EXP NO:21 C PROGRAM TO CREATE A FUNCTION TO FIND THE GREATEST NUMBER
+### EXP NO:21 C PROGRAM TO CREATE A FUNCTION TO FIND THE GREATEST NUMBER
 Aim:
 To write a C program to create a function to find the greatest number
 
@@ -12,17 +12,35 @@ Algorithm:
 5.	Call the max_of_four function with the input integers and store the result in the greater variable
  
 Program:
-//type your code here
+```c
+#include <stdio.h>
+
+int max_of_four(int a, int b, int c, int d){
+    if(a > b && a > c && a > d) return a;
+    else if(b > a && b > c && b > d) return b;
+    else if(c > a && c > b && c > d) return c;
+    else return d;
+}
+
+int main(){
+    int a, b, c, d;
+    scanf("%d\n%d\n%d\n%d", &a, &b, &c, &d);
+    int max = max_of_four(a, b, c, d);
+    printf("%d", max);
+}
+
+```
 
 Output:
-//paste your output here
+
+![alt text](image/11(1).png)
 
 Result:
 Thus, the program  that create a function to find the greatest number is verified successfully.
 
 
  
-EXP NO:22 C PROGRAM TO PRINT THE MAXIMUM VALUES FOR THE AND, OR AND  XOR COMPARISONS
+### EXP NO:22 C PROGRAM TO PRINT THE MAXIMUM VALUES FOR THE AND, OR AND  XOR COMPARISONS
 Aim:
 To write a C program to print the maximum values for the AND, OR and XOR comparisons
 
@@ -36,10 +54,39 @@ Algorithm:
 7.	Call the calculate_the_max function with input values.
  
 Program:
-//type your code here
+```c
+#include <stdio.h>
+
+void calculate_the_maximum(int n, int k){
+    int max_and = 0;
+    int max_or = 0;
+    int max_xor = 0;
+    int a = 0, b = 0, c = 0;
+    for(int i = 1; i < n; i++){
+        for(int j = i + 1; j <= n; j++){
+            a = i & j;
+            b = i | j;
+            c = i ^ j;
+            if(a > max_and && a < k) max_and = a;
+            if(b > max_or && b < k) max_or = b;
+            if(c > max_xor && c < k) max_xor = c;
+        }
+    }
+    printf("%d\n%d\n%d\n", max_and ,max_or, max_xor);
+}
+
+int main(){
+    int n, k;
+    scanf("%d %d", &n, &k);
+    
+    calculate_the_maximum(n, k);
+}
+
+```
 
 Output:
-//paste your output here
+
+![alt text](image/11(2).png)
 
 Result:
 Thus, the program to print the maximum values for the AND, OR and XOR comparisons
@@ -47,7 +94,7 @@ is verified successfully.
 
 
  
-EXP NO:23 C PROGRAM TO WRITE THE LOGIC FOR THE REQUESTS
+### EXP NO:23 C PROGRAM TO WRITE THE LOGIC FOR THE REQUESTS
 Aim:
 To write a C program to write the logic for the requests
 
@@ -59,18 +106,38 @@ Algorithm:
 5.	Use a for loop to iterate over the queries.
  
 Program:
-//type your code here
+```c
+#include <stdio.h>
+#include <string.h>
+
+void series(int n,int a, int b, int c){
+    if(n == 4){
+        printf("%d", a + b + c);
+        return;
+    }
+    series(n - 1, b, c, a + b + c);
+}
+
+int main(){
+    int n;
+    scanf("%d\n", &n);
+    int a, b, c;
+    scanf("%d %d %d", &a, &b, &c);
+    series(n, a, b, c);
+}
+
+```
 
 Output:
-//paste your output here
 
+![alt text](image/11(3).png)
 
 Result:
 Thus, the program to write the logic for the requests is verified successfully.
 
 
  
-EXP NO:24 C PROGRAM PRINT THE SUM OF THE INTEGERS IN THE ARRAY.
+### EXP NO:24 C PROGRAM PRINT THE SUM OF THE INTEGERS IN THE ARRAY.
 Aim:
 To write a C program print the sum of the integers in the array.
 
@@ -86,20 +153,33 @@ Algorithm:
 
 
 Program:
-//type your code here
+```c
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+    char str[20];
+    scanf("%[^\n]%*c", str);
+    for(int i = 0; str[i] != '\0'; i++){
+        if('A' <= str[i] && str[i] <= 'Z'){
+            str[i] = (str[i] + 32);
+        }
+    }
+    printf("%s", str);
+}
+
+```
 
 Output:
-//paste your output here
 
+![alt text](image/11(4).png)
  
-
-
 Result:
 Thus, the program prints the sum of the integers in the array is verified successfully.
 
 
  
-EXP NO 25: C PROGRAM TO COUNT THE NUMBER OF WORDS IN A      SENTENCE
+### EXP NO 25: C PROGRAM TO COUNT THE NUMBER OF WORDS IN A      SENTENCE
 
 
 
@@ -120,12 +200,32 @@ o	If a character is not a space, it may belong to a word. If it's the first non-
 
 
 Program:
-//type your code here
+```c
+#include <stdio.h>
+#include <string.h>
+
+void reverse(char *s){
+    int n = strlen(s);
+    char sr[n];
+    printf("Input String: %s\n", s);
+    for(int i = 0; i < n; i++){
+        sr[i] = s[n - i - 1];
+    }
+    sr[n] = '\0';
+    printf("Reverse String: %s\n", sr);
+}
+
+int main(){
+    char str[20];
+    scanf("%[^\n]%*c", str);
+    reverse(str);
+}
+
+```
 
 Output:
-//paste your output here
 
-
+![alt text](image/11(5).png)
 
 Result:
 
