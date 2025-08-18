@@ -176,6 +176,7 @@ void dequeue()
 ```
 
 Output:
+
 ![alt text](image/9(5).png)
 
 Result:
